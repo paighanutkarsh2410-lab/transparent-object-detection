@@ -25,6 +25,24 @@ binary mask + transparency %
 
 A single `predict.py` invocation runs the full pipeline end-to-end.
 
+## Example output
+
+Running `predict.py` on a sample image:
+
+```
+python predict.py examples/sample_input.jpg --out_dir examples
+```
+
+![Sample output](examples/sample_result.png)
+
+Five panels: original input · shadow-free version · predicted binary mask · green overlay on the original · MiDaS depth map. The transparency percentage in the title is the area of the predicted mask divided by image area.
+
+## Training
+
+Training curves for the segmentation model (95 epochs, early stopped, cosine LR with warmup):
+
+![Training curves](examples/training_curves.png)
+
 ## Results
 
 PyramidalNet was trained on the shadow-removed Trans10K training split (5,000 images). All numbers below are on the held-out validation set with test-time augmentation (horizontal flip) and morphological post-processing applied.
