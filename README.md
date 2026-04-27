@@ -45,7 +45,7 @@ Two aggregations are reported per split: *all images* (which rewards a correctly
 ### 1. Install
 
 ```bash
-git clone <this-repo-url>
+git clone https://github.com/Utk2804/transparent-object-detection.git
 cd <repo>
 pip install -r requirements.txt
 ```
