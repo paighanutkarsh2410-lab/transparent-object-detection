@@ -1,0 +1,82 @@
+# ----- Datasets (download separately, see README) -----
+Dataset/
+Dataset_shadow_free/
+ISTD_Dataset/
+ISTD_Dataset.zip
+*.zip
+
+# ----- Model weights (distribute via GitHub Releases) -----
+trained_models/
+checkpoints/
+checkpoints_attunet/
+models/
+*.pth
+*.pt
+*.onnx
+
+# ----- Caches -----
+.torch_cache/
+.hf_cache/
+torch_cache/
+hf_cache/
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+
+# ----- Inference outputs -----
+predictions/
+test_edge_cases/
+results/
+workdirs/
+evaluation_results.csv
+
+# ----- Logs -----
+*.log
+
+# ----- Office lock files / scratch ----
+~$*
+.DS_Store
+Thumbs.db
+
+# ----- Personal / academic artifacts (kept locally, not pushed) -----
+# Excludes papers, theses, certificates, posters, presentations etc. at the
+# top of the repo. Anything under docs/ is still tracked, so you can publish
+# a clean architecture diagram or write-up there.
+/*.pdf
+/*.docx
+/*.pptx
+/*.tex
+/*.drawio
+/*.xml
+/*.mp4
+/*.make
+/*.tmp
+# Ignore stray result/architecture PNGs at repo root
+/*.png
+
+# ----- Old subdirectories (academic / scratch) ----
+/Images Publication/
+/New Results/
+/templates/
+/workdirs/
+/checkpoints/
+
+# ----- Sample test images / overnight log ----
+/*.log
+/Animated*
+/Screen Recording*
+
+# ----- Allow the curated docs folder ----
+!docs/
+!docs/**
+
+# ----- IDE -----
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ----- Local configs -----
+.env
+.env.local

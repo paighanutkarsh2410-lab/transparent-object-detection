@@ -1,0 +1,17 @@
+# Core deep learning stack (CUDA 11.8 build).
+# For CPU-only or different CUDA, install torch/torchvision from
+# https://pytorch.org/get-started/locally/ first, then pip install -r requirements.txt
+torch>=2.6.0
+torchvision>=0.21.0
+
+# Vision / segmentation
+timm>=1.0.15
+opencv-python>=4.10.0
+Pillow>=10.0.0
+pytorch-msssim>=1.0.0
+
+# Numerics + plotting + I/O
+numpy>=1.24,<3
+pandas>=2.0
+matplotlib>=3.8
+tqdm>=4.66
